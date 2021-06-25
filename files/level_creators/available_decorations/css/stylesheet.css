@@ -1,0 +1,55 @@
+.scrollBox {
+    overflow: scroll;
+    height: 600px;
+    width: 100%;
+}
+
+.dark {
+    /* background-color: white; */
+    /* background-color: aliceblue; */
+    background-color: black;
+    color: black;
+}
+
+.light {
+    /* background-color: black; */
+    /* background-color: aqua; */
+    background-color: white;
+    /* color: white; */
+}
+
+.normaliser,
+.dark,
+.light {
+    width: 50px;
+    height: 50px;
+}
+
+.index,
+.BottomSectionOfFrame {
+    width: 99%;
+    background-color: white;
+    border: 1px black groove;
+}
+
+.index:clicked {
+    background-color: aliceblue;
+}
+
+.menuButton {
+    background-color: white;
+    border: 1px black groove;
+    padding: 1px;
+    margin-right: 0px;
+    margin-left: 5px;
+    /* float: right; */
+    position: fixed;
+}
+
+.menuButton:hover {
+    background-color: aqua;
+}
+
+#default {
+    display: none;
+}
