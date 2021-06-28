@@ -5,17 +5,12 @@
 }
 
 .dark {
-    /* background-color: white; */
-    /* background-color: aliceblue; */
     background-color: black;
     color: black;
 }
 
 .light {
-    /* background-color: black; */
-    /* background-color: aqua; */
     background-color: white;
-    /* color: white; */
 }
 
 .normaliser,
@@ -44,6 +39,7 @@
     margin-left: 5px;
     /* float: right; */
     position: fixed;
+    background-position: right;
 }
 
 .menuButton:hover {
@@ -52,4 +48,11 @@
 
 #default {
     display: none;
+}
+
+.mainBox {
+    background-color: transparent;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
