@@ -24,7 +24,7 @@
 .BottomSectionOfFrame {
     width: 99%;
     background-color: white;
-    border: 1px black groove;
+    border: 0.5px black groove;
 }
 
 .index:clicked {
@@ -33,7 +33,7 @@
 
 .menuButton {
     background-color: white;
-    border: 1px black groove;
+    border: 0.5px black groove;
     padding: 1px;
     margin-right: 0px;
     margin-left: 5px;

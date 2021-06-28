@@ -4,15 +4,18 @@ Social
 
 */
 function showContent(ID, ID2) {
-    state = document.getElementById(ID).style.display
+    var state = document.getElementById(ID).style.display;
+    // subInfo = $(ID2);
     if (state === "block") {
         document.getElementById(ID).style.display = "none";
         document.getElementById(ID2).innerHTML = "+";
         document.getElementById(ID2).style.backgroundColor = "transparent";
+        // subInfo.slideUp(300);
     } else {
         document.getElementById(ID).style.display = "block";
         document.getElementById(ID2).innerHTML = "-";
         document.getElementById(ID2).style.backgroundColor = "aqua";
+        // subInfo.slideDown(300);
     }
 
 }
