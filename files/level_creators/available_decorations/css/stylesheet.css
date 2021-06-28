@@ -38,7 +38,7 @@
     margin-right: 0px;
     margin-left: 5px;
     /* float: right; */
-    position: fixed;
+    /* position: fixed; */
     background-position: right;
 }
 
@@ -55,4 +55,22 @@
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+}
+
+.link {
+    color: blue;
+    text-decoration: none;
+}
+
+.link:hover {
+    /* color: lightblue; */
+    color: cornflowerblue;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.link:active {
+    /* color: red; */
+    color: lightblue;
+    text-decoration: dotted;
 }
