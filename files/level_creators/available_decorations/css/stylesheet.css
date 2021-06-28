@@ -1,5 +1,5 @@
 .scrollBox {
-    overflow: scroll;
+    /* overflow: scroll; */
     height: 600px;
     width: 100%;
 }
