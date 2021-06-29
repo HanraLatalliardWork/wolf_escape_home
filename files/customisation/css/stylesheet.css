@@ -1,0 +1,14 @@
+.keyFromKeyboard{
+    /* width: 50px; */
+    height: 50px;
+}
+.captionSubTitle, .captionTitle{
+    font-weight: bold;
+}
+.captionTitle{
+    text-decoration: underline;
+    text-align: center;
+}
+.hiddenCell{
+    color:aliceblue;
+}
