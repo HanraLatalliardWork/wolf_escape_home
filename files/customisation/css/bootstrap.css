@@ -21,7 +21,7 @@ tbody, tfoot, thead, tr, th, td{
 /* Header */
 
 header {
-    position: absolute;
+    position: fixed;
     width: 200%;
     color: black;
     background-color: rgba(255, 255, 255, 0.5);
