@@ -2,6 +2,38 @@ body {
     background-color: aliceblue;
 }
 
+p,h1,h2,h3,h4,h5,h6,h7,h8,span,
+div, span, applet, object, iframe,
+blockquote, pre,a, abbr, acronym, 
+address, big, cite, code,del, dfn, 
+em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, 
+var,b, u, i, center, dl, dt, dd, ol, ul, 
+li,fieldset, form, label, legend, table, caption, 
+tbody, tfoot, thead, tr, th, td{
+    color: black
+}
+
+
+/* Layout */
+
+
+/* Header */
+
+header {
+    position: absolute;
+    width: 200%;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+    top: 0px;
+    border-color: rgba(0, 0, 0, 1);
+    box-shadow: 10px 10px 10px yellowgreen;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.308)
+}
+
+
+/* Footer */
+
 
 /* links */
 
