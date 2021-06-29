@@ -1,0 +1,88 @@
+body {
+    background-color: black;
+}
+
+p {
+    color: whitesmoke;
+}
+
+
+/* links */
+
+.link,
+a {
+    color: gold;
+    text-decoration: none;
+}
+
+.link:hover,
+a:hover {
+    /* color: lightblue; */
+    color: crimson;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.link:active,
+a:active {
+    /* color: red; */
+    color: lightblue;
+    text-decoration: dotted;
+}
+
+
+/* a ScrollBox */
+
+.scrollBox {
+    /* overflow: scroll; */
+    height: 600px;
+    width: 100%;
+}
+
+
+/* images */
+
+.light {
+    background-color: black;
+    color: black;
+}
+
+.dark {
+    background-color: white;
+}
+
+
+/* dropdown */
+
+.index,
+.BottomSectionOfFrame {
+    width: 99%;
+    background-color: white;
+    border: 0.5px black groove;
+}
+
+.index:clicked {
+    background-color: aliceblue;
+}
+
+.menuButton {
+    background-color: white;
+    border: 0.5px black groove;
+    padding: 1px;
+    margin-right: 0px;
+    margin-left: 5px;
+    /* float: right; */
+    /* position: fixed; */
+    background-position: right;
+}
+
+.menuButton:hover {
+    background-color: aqua;
+}
+
+.mainBox {
+    background-color: transparent;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
