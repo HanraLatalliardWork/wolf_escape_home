@@ -42,7 +42,7 @@ TI=treat()
 r=TI.firstLayer(To_Treat)
 print()
 print(r)
-writeTo("List.txt","w",r)
+writeTo("list","w",r)
 
 class unTreat:
     def __init__(self):
