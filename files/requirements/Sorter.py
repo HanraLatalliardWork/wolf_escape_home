@@ -1,6 +1,6 @@
 import list as TO_Download
 
-print(dir(TO_Download))
+#print(dir(TO_Download))
 
 def writeTo(fileName,level,content):
     f=open(fileName,level)
@@ -40,9 +40,9 @@ To_Treat=TO_Download.main_for_rec
 To_Treat_Dict=TO_Download.main_for_rec_dict
 TI=treat()
 r=TI.firstLayer(To_Treat)
-print()
-print(r)
-writeTo("list","w",r)
+#print()
+#print(r)
+writeTo("liist.py","w",r)
 
 class unTreat:
     def __init__(self):
@@ -54,16 +54,16 @@ class unTreat:
         temp=element.split(self.BigList)
         temp2=[]
         for i in range(len(temp)):
-            print(temp[i])
+            #print(temp[i])
             temp2.append(temp[i].split(self.childList))
-        print(temp2)
+        #print(temp2)
         listMain=[]
         for i in range(len(temp2)):
             for b in range(len(temp2[i])):
                 temp3=temp2[i][b].split(self.subChildren)
                 listMain.append(temp3)
-        print("\n\n\\n\\n\\n\n\n")
-        print(listMain)
+        #print("\n\n\\n\\n\\n\n\n")
+        #print(listMain)
         toPop=[]
         for i in range(len(listMain)):
             #toPop.append(i)
@@ -76,7 +76,7 @@ class unTreat:
                     temp2.append(b)
                 temp1.append(temp2)
             toPop.append(temp1)
-        print(toPop)
+        #print(toPop)
         #for i in range(len(toPop)):
         #    print(f"toPop[{i}]={toPop[i]}")
         #    for b in range(len(toPop[i])):
@@ -88,5 +88,5 @@ class unTreat:
         return listMain#,toPop
 UI=unTreat()
 m=UI.Layers(r)
-t=m[1]
-m=m[0]
+#t=m[1]
+#m=m[0]
