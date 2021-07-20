@@ -22,8 +22,17 @@
 </head>
 
 <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v11.0" nonce="XJZzd85a"></script>
     <header>
-        <p><input type="checkbox" class="site_theme" id="darkOrLight" onclick="theme('darkOrLight','theme')" />light/dark</p>
+        <HeaderLeft>
+            <p><input type="checkbox" class="site_theme" id="darkOrLight" onclick="theme('darkOrLight','theme')" />light/dark</p>
+        </HeaderLeft>
+        <center class="HeaderCenter"></center>
+        <HeaderRight>
+            <div class="fb-like" data-href="https://www.facebook.com/HenrySoftwareHouse" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
+        </HeaderRight>
+
     </header>
     <main>
         <br>
@@ -178,17 +187,42 @@
         <p>    To exit the game, press "esc" or clic on the cross</p>
         <br>    
         <p>    Commands to guide the wolf</p>
-        K_RIGHT K_d: dk.deplacer('droite')
-        K_LEFT K_a K_q: dk.deplacer('gauche')
-        K_UP K_z K_w: dk.deplacer('haut')
-        K_DOWN K_s:dk.deplacer('bas')
-        <p>    (up arrow) make the wolf go up in the maze but also z</p>
-        <br>    
-        <p>    (left arrow) makes the wolf go left in the maze</p>
-        <br>    
-        <p>    (right arrow) makes the wolf go right in the maze</p>
-        <br>    
-        <p>    (down arrow) makes the wolf go down in the maze</p>
+        <table>
+            <tr>
+                <td></td>
+                <td></td>
+                <td colspan="2"><img class="keyFromKeyboard" src="files/img/keys/computer_key_Arrow_Up_T.png" title="The key [&uparrow;], when in a level, will move the character up." alt="The key [&uparrow;], when in a level, will move the character up."/></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_W_T.png" title="The key [W], when in a level, will move the character up." alt="The key [W], when in a level, will move the character up."/></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_Z_T.png" title="The key [Z], when in a level, will move the character up." alt="The key [Z], when in a level, will move the character up."/></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_Arrow_Left_T.png" title="The key [&leftarrow;], when in a level, will move the character closer to the left." alt="The key [&leftarrow;], when in a level, will move the character closer to the left."/></td>
+                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_Arrow_Down_T.png" title="The key [&downarrow;], when in a level, will move the character down." alt="The key [&downarrow;], when in a level, will move the character down."/></td>
+                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_Arrow_Right_T.png" titrightarrow;le="The key [&rightarrow;], when in a level, will move the character closer to the right." alt="The key [&rightarrow;], when in a level, will move the character closer to the right."/></td>
+                <td>OR</td>
+                <td></td>
+                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_A_T.png" title="The key [A], when in a level, will move the character down." alt="The key [A], when in a level, will move the character down."/></td>
+                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_S_T.png" title="The key [S], when in a level, will move the character down." alt="The key [S], when in a level, will move the character down."/></td>
+                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_D_T.png" title="The key [D], when in a level, will move the character closer to the left." alt="The key [D], when in a level, will move the character closer to the left."/></td>
+                <td>OR</td>
+                <td></td>
+                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_Q_T.png" title="The key [Q], when in a level, will move the character down." alt="The key [Q], when in a level, will move the character down."/></td>
+                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_S_T.png" title="The key [S], when in a level, will move the character up." alt="The key [S], when in a level, will move the character up."/></td>
+                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_D_T.png" title="The key [D], when in a level, will move the character closer to the left." alt="The key [D], when in a level, will move the character closer to the left."/></td>
+            </tr>
+        </table>
+        <p>    &uparrow; make the wolf go up in the maze but also Z or W.</p>  
+        <p>    &leftarrow; makes the wolf go left in the maze but also Q or A.</p>
+        <p>    &rightarrow; makes the wolf go right in the maze but also D.</p>
+        <p>    &downarrow; makes the wolf go down in the maze but also S.</p>
         <br>
         <p id="licence"/>
         <h2>Wolf Escape's licence</h2>
@@ -196,38 +230,40 @@
         <p id="Hosts"/>
         <h2>Hosted by:</h2>
         <br>
+        <a class="link" href="https://github.com/HanraLatalliardWork/wolf_escape_home"><img class="HostsGithub" src=""/></a>
+        <br>
         <p id="ToCome"/>
         <h2>To Come</h2>
         <br>
         <p id="Credits"/>
         <credits>
             <h4>Credits</h4>
-            <p>key C: https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_C.png.html
-            key esc: https://www.wpclipart.com/computer/keyboard_keys/function_key_row/computer_key_Esc.png.html
-            key space: https://www.wpclipart.com/computer/keyboard_keys/large_keys/computer_key_Space_bar.png.html
-            key arrow down: https://www.wpclipart.com/computer/keyboard_keys/arrow_keys/computer_key_Arrow_Down.png.html
-            key arrow left: https://www.wpclipart.com/computer/keyboard_keys/arrow_keys/computer_key_Arrow_Left.png.html
-            key arrow right: https://www.wpclipart.com/computer/keyboard_keys/arrow_keys/computer_key_Arrow_Right.png.html
-            key arrow up: https://www.wpclipart.com/computer/keyboard_keys/arrow_keys/computer_key_Arrow_Up.png.html
-            key backspace: https://www.wpclipart.com/computer/keyboard_keys/large_keys/computer_key_Backspace.png.html
-            key enter: https://www.wpclipart.com/computer/keyboard_keys/large_keys/computer_key_Enter.png.html
-            key z: https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_Z.png.html
-            key q: https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_Q.png.html
-            key s: https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_S.png.html
-            key d: https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_D.png.html
-            key a: https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_A.png.html
-            key w: https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_W.png.html
-            key F1: https://www.wpclipart.com/computer/keyboard_keys/function_key_row/computer_key_F1.png.html
-            key F2:https://www.wpclipart.com/computer/keyboard_keys/function_key_row/computer_key_F2.png.html
-            key F3:https://www.wpclipart.com/computer/keyboard_keys/function_key_row/computer_key_F3.png.html
-            key H: https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_H.png.html
-            key I: https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_I.png.html
-            key P: https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_P.png.html
-            key M: https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_M.png.html</p>
-            <p><img class="image_WE_Link_Container_child" src="files/img/down-arrow.svg"/> Download Button :</p><div>Icons made by <a href="https://creativemarket.com/Becris" title="Becris">Becris</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-            <p><img class="The_image_of_the_system" src="files/img/OS/apple.svg" alt="Apple" title="Apple"/> Mac: <a class="link" href="https://worldvectorlogo.com/fr/logo/apple">https://worldvectorlogo.com/fr/logo/apple</a></p>
-            <p><img class="The_image_of_the_system" src="files/img/OS/microsoft-windows-22.svg" alt="Windows" title="Windows"/> Windows: <a class="link" href="https://worldvectorlogo.com/fr/logo/microsoft-windows-22">https://worldvectorlogo.com/fr/logo/microsoft-windows-22</a></p>
-            <p><img class="The_image_of_the_system" src="files/img/OS/Removal-41.png" alt="Linux" title="Linux"/> Linux: <a class="link" href="https://worldvectorlogo.com/fr/linux-tux">https://worldvectorlogo.com/fr/logo/linux-tux</a></p>
+            <p><img class="image_credits" src="files/img/keys/computer_key_A_T.png"/> Key A: <a class="link" href="https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_A.png.html">https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_A.png.html</a></p>
+            <p><img class="image_credits" src="files/img/keys/computer_key_C_T.png"/> Key C: <a class="link" href="https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_C.png.html">https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_C.png.html</a></p>
+            <p><img class="image_credits" src="files/img/keys/computer_key_D_T.png"/> Key D: <a class="link" href="https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_D.png.html">https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_D.png.html</a></p>
+            <p><img class="image_credits" src="files/img/keys/computer_key_H_T.png"/> Key H: <a class="link" href="https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_H.png.html">https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_H.png.html</a></p>
+            <p><img class="image_credits" src="files/img/keys/computer_key_I_T.png"/> Key I: <a class="link" href="https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_I.png.html">https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_I.png.html</a></p>
+            <p><img class="image_credits" src="files/img/keys/computer_key_M_T.png"/> Key M: <a class="link" href="https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_M.png.html">https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_M.png.html</a></p>
+            <p><img class="image_credits" src="files/img/keys/computer_key_P_T.png"/> Key P: <a class="link" href="https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_P.png.html">https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_P.png.html</a></p>
+            <p><img class="image_credits" src="files/img/keys/computer_key_Q_T.png"/> Key Q: <a class="link" href="https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_Q.png.html">https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_Q.png.html</a></p>
+            <p><img class="image_credits" src="files/img/keys/computer_key_S_T.png"/> Key S: <a class="link" href="https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_S.png.html">https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_S.png.html</a></p>
+            <p><img class="image_credits" src="files/img/keys/computer_key_W_T.png"/> Key W: <a class="link" href="https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_W.png.html">https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_W.png.html</a></p>
+            <p><img class="image_credits" src="files/img/keys/computer_key_Z_T.png"/> Key Z: <a class="link" href="https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_Z.png.html">https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_Z.png.html</a></p>
+            <p><img class="image_credits" src="files/img/keys/computer_key_Esc_T.png"/> Key esc: <a class="link" href="https://www.wpclipart.com/computer/keyboard_keys/function_key_row/computer_key_Esc.png.html">https://www.wpclipart.com/computer/keyboard_keys/function_key_row/computer_key_Esc.png.html</a></p>
+            <p><img class="image_credits" src="files/img/keys/computer_key_Space_bar_T.png"/> Key space: <a class="link" href="https://www.wpclipart.com/computer/keyboard_keys/large_keys/computer_key_Space_bar.png.html">https://www.wpclipart.com/computer/keyboard_keys/large_keys/computer_key_Space_bar.png.html</a></p>
+            <p><img class="image_credits" src="files/img/keys/computer_key_Arrow_Down_T.png"/> Key arrow down: <a class="link" href="https://www.wpclipart.com/computer/keyboard_keys/arrow_keys/computer_key_Arrow_Down.png.html">https://www.wpclipart.com/computer/keyboard_keys/arrow_keys/computer_key_Arrow_Down.png.html</a></p>
+            <p><img class="image_credits" src="files/img/keys/computer_key_Arrow_Left_T.png"/> Key arrow left: <a class="link" href="https://www.wpclipart.com/computer/keyboard_keys/arrow_keys/computer_key_Arrow_Left.png.html">https://www.wpclipart.com/computer/keyboard_keys/arrow_keys/computer_key_Arrow_Left.png.html</a></p>
+            <p><img class="image_credits" src="files/img/keys/computer_key_Arrow_Right_T.png"/> Key arrow right: <a class="link" href="https://www.wpclipart.com/computer/keyboard_keys/arrow_keys/computer_key_Arrow_Right.png.html">https://www.wpclipart.com/computer/keyboard_keys/arrow_keys/computer_key_Arrow_Right.png.html</a></p>
+            <p><img class="image_credits" src="files/img/keys/computer_key_Arrow_Up_T.png"/> Key arrow up: <a class="link" href="https://www.wpclipart.com/computer/keyboard_keys/arrow_keys/computer_key_Arrow_Up.png.html">https://www.wpclipart.com/computer/keyboard_keys/arrow_keys/computer_key_Arrow_Up.png.html</a></p>
+            <p><img class="image_credits" src="files/img/keys/computer_key_Backspace_T.png"/> Key backspace: <a class="link" href="https://www.wpclipart.com/computer/keyboard_keys/large_keys/computer_key_Backspace.png.html">https://www.wpclipart.com/computer/keyboard_keys/large_keys/computer_key_Backspace.png.html</a></p>
+            <p><img class="image_credits" src="files/img/keys/computer_key_Enter_T.png"/> Key enter: <a class="link" href="https://www.wpclipart.com/computer/keyboard_keys/large_keys/computer_key_Enter.png.html">https://www.wpclipart.com/computer/keyboard_keys/large_keys/computer_key_Enter.png.html</a></p>
+            <p><img class="image_credits" src="files/img/keys/computer_key_F1_T.png"/> Key F1: <a class="link" href="https://www.wpclipart.com/computer/keyboard_keys/function_key_row/computer_key_F1.png.html">https://www.wpclipart.com/computer/keyboard_keys/function_key_row/computer_key_F1.png.html</a></p>
+            <p><img class="image_credits" src="files/img/keys/computer_key_F2_T.png"/> Key F2: <a class="link" href="https://www.wpclipart.com/computer/keyboard_keys/function_key_row/computer_key_F2.png.html">https://www.wpclipart.com/computer/keyboard_keys/function_key_row/computer_key_F2.png.html</a></p>
+            <p><img class="image_credits" src="files/img/keys/computer_key_F3_T.png"/> Key F3: <a class="link" href="https://www.wpclipart.com/computer/keyboard_keys/function_key_row/computer_key_F3.png.html">https://www.wpclipart.com/computer/keyboard_keys/function_key_row/computer_key_F3.png.html</a></p>
+            <p><img class="image_credits" src="files/img/down-arrow.svg"/> Download Button : Icons made by <a href="https://creativemarket.com/Becris" title="Becris">Becris</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+            <p><img class="image_credits" src="files/img/OS/apple.svg" alt="Apple" title="Apple"/> Mac: <a class="link" href="https://worldvectorlogo.com/fr/logo/apple">https://worldvectorlogo.com/fr/logo/apple</a></p>
+            <p><img class="image_credits" src="files/img/OS/microsoft-windows-22.svg" alt="Windows" title="Windows"/> Windows: <a class="link" href="https://worldvectorlogo.com/fr/logo/microsoft-windows-22">https://worldvectorlogo.com/fr/logo/microsoft-windows-22</a></p>
+            <p><img class="image_credits" src="files/img/OS/Removal-41.png" alt="Linux" title="Linux"/> Linux: <a class="link" href="https://worldvectorlogo.com/fr/linux-tux">https://worldvectorlogo.com/fr/logo/linux-tux</a></p>
         </credits>
         
     </main>

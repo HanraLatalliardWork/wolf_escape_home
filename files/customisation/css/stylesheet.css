@@ -10,7 +10,7 @@
     text-align: center;
 }
 .hiddenCell{
-    color:aliceblue;
+    color:transparent;
 }
 
 .A_W_E_H1{
@@ -56,4 +56,8 @@
 
 #The_hidden_Buttons{
     display: none;
+}
+
+.image_credits{
+    height: 40px;
 }
