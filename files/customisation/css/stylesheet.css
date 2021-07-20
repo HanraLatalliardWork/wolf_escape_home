@@ -12,3 +12,48 @@
 .hiddenCell{
     color:aliceblue;
 }
+
+.A_W_E_H1{
+    font-size: large;
+    font-weight: bold;
+    text-decoration: underline 3px black;
+
+}
+
+
+.System_container{
+    display: flex;
+    flex-direction:row;
+}
+.System_and_image{
+    border: 1px black groove;
+    border-radius: 3px;
+    margin: 3px;
+    text-align: center;
+    background-color: white;
+    padding: 4px;
+    color: black;
+}
+.The_image_of_the_system{
+    border:none;
+    width: 100px;
+    height: 100px;
+}
+
+.WE_Link_container,.Discord_Link_container{
+    display: flex;
+    flex-direction:row;
+}
+.image_WE_Link_Container_child,.image_Discord_Link_Container_child{
+    width: 50px;
+    height: 50px;
+    border: none;
+}
+
+.image_WE_Link_Container_child:hover{
+    transform: translateY(5px);
+}
+
+#The_hidden_Buttons{
+    display: none;
+}

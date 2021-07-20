@@ -14,6 +14,7 @@
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
     <script type="text/JavaScript" src="files/customisation/js/dark_light.js"></script>
+    <script type="text/JavaScript" src="files/customisation/js/script.js"></script>
     <meta charset="utf-8">
     <meta lang="eng">
     <meta id="theme">
@@ -35,29 +36,40 @@
         <script type="text/JavaScript">TableOfContents("content");</script>
         <p id="About"/>
         <h2>About Wolf Escape</h2>
-        <p>Wolf_escape, is a game I'm creating in which you have to guide a wolf througth different mazes and avoid ennemies.</p>
+        <p>Wolf_escape, is a game I'm creating in which you have to guide a wolf through different mazes and avoid ennemies.</p>
         <br>
-        <p>    Ennemies </p>
-        <p>    The wolfs current ennemy is the pound-man (gardner with a net). Some of the ennemies are static and others move.
+        <h1 class="A_W_E_H1">Ennemies:</h1>
+        <p>The wolfs current enemy is the pound-man (gardner with a net). Some of the ennemies are static and others move.
         <br>    
-        <p>    Levels </p>
-        <p>    The majority of the levels are played automaticaly (either in the story mode (if you pressed space) or if you have chosen a specific level (by pressing enter or backspace))</p>
+        <h1 class="A_W_E_H1">Levels:</h1>
+        <p>The majority of the levels are played automatically (either in the story mode (if you pressed space) or if you have chosen a specific level (by pressing enter or backspace))</p>
         <br>    
-        <p>    However, some levels are hidden, to be played a specific key on your keyboard has to be pressed. Will you succeed in finding them all!</p>
+        <p>However, some levels are hidden, to be played a specific key on your keyboard has to be pressed. Will you succeed in finding them all!</p>
         <br>    
-        <p>    Hint</p>
-        <p>    There are currently four hidden levels.</p>
+        <h1 class="A_W_E_H1">Hint:</h1>
+        <p>There are currently four hidden levels.</p>
         <br>    
-        <p>    If you find the levels, please keep them to yourself (so that other ones can try to find them too).</p>
+        <p>If you find the levels, please keep them to yourself (so that other ones can try to find them too).</p>
         <br>
         <p id="supported"/>
         <h2>Supported Systems</h2>
+        <div class="System_container">
+            <p class="System_and_image"><img class="The_image_of_the_system" src="files/img/OS/apple.svg" alt="Apple" title="Apple"/><br>Apple<br> (may encounter errors if python 2.x is running it)</p>
+            <p class="System_and_image"><img class="The_image_of_the_system" src="files/img/OS/microsoft-windows-22.svg" alt="Windows" title="Windows"/><br>Windows<br> (if python is installed)</p>
+            <p class="System_and_image"><img class="The_image_of_the_system" src="files/img/OS/Removal-41.png" alt="Linux" title="Linux"/><br>Linux<br> (if python is installed)</p>
+        </div>
+        
         <br>
         <p id="Download"/>
         <h2>Download Wolf Escape</h2>
+            <a class="link" href="https://hanra-latalliar.gumroad.com/l/kenGL" target="__blank"><img class="image_WE_Link_Container_child" src="files/img/down-arrow.svg" alt="Discord logo" title="Discord logo"/>Download Wolf escape!</a>
+        </div>
         <br>
         <p id="Discord"/>
         <h2>The Wolf Escape Discord server</h2>
+        <div class="Discord_Link_container">
+            <a class="link" href="https://discord.gg/VM2cJ69"><img class="image_Discord_Link_Container_child" src="files/requirements/img/Follow-me/discord/discord_B.PNG" alt="Discord logo" title="Discord logo"/>Wolf Escape</a>
+        </div>
         <br>
         <p id="Controls"/>
         <h2>How to play Wolf Escape</h2>
@@ -72,11 +84,14 @@
             </tr>
             <tr>
                 <td class="captionSubTitle">Menu Interaction:</td>
-                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_Space_bar_T.png"/>space</td>
-                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_Backspace_T.png"/>return</td>
-                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_Enter_T.png"/>enter</td>
-                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_C_T.png"/>c</td>
-                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_Esc_T.png"/>esc</td>
+                <td colspan="4"><img class="keyFromKeyboard" src="files/img/keys/computer_key_Space_bar_T.png" title="The key space, [__], when pressed will start the story mode of the game." alt="The key space, [__], when pressed will start the story mode of the game."/><br>space</td>
+                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_Backspace_T.png" title="The backspace key, [&leftarrow;], when pressed will show a pop-up allowing the user to select the level he/she wishes to play." alt="The backspace key, [&leftarrow;], when pressed will show a pop-up allowing the user to select the level he/she wishes to play."/><br>return</td>
+                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_Enter_T.png" title="The return key, [&blacktriangleleft;┘], when pressed will show a pop-up allowing the user to select the level he/she wishes to play." alt="The return key, [&blacktriangleleft;┘], when pressed will show a pop-up allowing the user to select the level he/she wishes to play."/><br>enter</td>
+                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_C_T.png" title="The key [C] stands for Credits. If this key is pressed, it will generate a pop-up that will show who were the beta testers, who developped the game, who were the graphits, and more." alt="The key [C] stands for Credits. If this key is pressed, it will generate a pop-up that will show who were the beta testers, who developped the game, who were the graphits, and more."/><br>c</td>
+                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_S_T.png" title="The key [S] Stands for Show levels. If this key is pressed, it will generate a pop-up that will allow you to browse through the available levels (including the hidden ones)." alt="The key [S] Stands for Show levels. If this key is pressed, it will generate a pop-up that will allow you to browse through the available levels (including the hidden ones)."/><br>s</td>
+                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_Esc_T.png" title="The key [esc] acts as quit in the main menu, or skip if in a level.esc stand for escape. The French key of esc is echap" alt="The key [esc] acts as quit in the main menu, or skip if in a level.esc stand for escape. The French key of esc is echap"/><br>escape</td>
+                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_Q_T.png" title="The key [Q], if in the main menu acts as quit.Q stands for Quit in English" alt="The key [Q], if in the main menu acts as quit.Q stands for Quit in English"/><br>q</td>
+                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_A_T.png" title="The key [A], if in the main menu acts as quit.A stands for Abandonner in French" alt="The key [A], if in the main menu acts as quit.A stands for Abandonner in French"/><br>a</td>
             </tr>
             <tr>
                 <td class="hiddenCell">.</td>
@@ -88,25 +103,67 @@
                 <td class="hiddenCell">.</td>
             </tr>
             <tr>
-                <td class="captionSubTitle">The universal keys:</td>
-                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_Arrow_Up_T.png"/>up</td>
-                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_Arrow_Down_T.png"/>down</td>
-                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_Arrow_Right_T.png"/>right</td>
-                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_Arrow_Left_T.png"/>left</td>
+                <td class="captionSubTitle">The universal keys: </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td colspan="2"><img class="keyFromKeyboard" src="files/img/keys/computer_key_Arrow_Up_T.png" title="The key [&uparrow;], when in a level, will move the character up." alt="The key [&uparrow;], when in a level, will move the character up."/><br>up</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_Arrow_Left_T.png" title="The key [&leftarrow;], when in a level, will move the character closer to the left." alt="The key [&leftarrow;], when in a level, will move the character closer to the left."/><br>left</td>
+                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_Arrow_Down_T.png" title="The key [&downarrow;], when in a level, will move the character down." alt="The key [&downarrow;], when in a level, will move the character down."/><br>down</td>
+                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_Arrow_Right_T.png" titrightarrow;le="The key [&rightarrow;], when in a level, will move the character closer to the right." alt="The key [&rightarrow;], when in a level, will move the character closer to the right."/><br>right</td>
+            </tr>
+            <tr>
+                <td class="hiddenCell">.</td>
             </tr>
             <tr>
                 <td class="captionSubTitle">The Qwerty Keys:</td>
-                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_W_T.png"/>w</td>
-                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_A_T.png"/>a</td>
-                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_S_T.png"/>s</td>
-                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_D_T.png"/>d</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_W_T.png" title="The key [W], when in a level, will move the character up." alt="The key [W], when in a level, will move the character up."/><br>w</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_A_T.png" title="The key [A], when in a level, will move the character down." alt="The key [A], when in a level, will move the character down."/><br>a</td>
+                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_S_T.png" title="The key [S], when in a level, will move the character down." alt="The key [S], when in a level, will move the character down."/><br>s</td>
+                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_D_T.png" title="The key [D], when in a level, will move the character closer to the left." alt="The key [D], when in a level, will move the character closer to the left."/><br>d</td>
+            </tr>
+            <tr>
+                <td class="hiddenCell">.</td>
             </tr>
             <tr>
                 <td class="captionSubTitle">The Azerty layout:</td>
-                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_Z_T.png"/>z</td>
-                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_Q_T.png"/>q</td>
-                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_S_T.png"/>s</td>
-                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_D_T.png"/>d</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_Z_T.png" title="The key [Z], when in a level, will move the character up." alt="The key [Z], when in a level, will move the character up."/><br>z</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_Q_T.png" title="The key [Q], when in a level, will move the character down." alt="The key [Q], when in a level, will move the character down."/><br>q</td>
+                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_S_T.png" title="The key [S], when in a level, will move the character up." alt="The key [S], when in a level, will move the character up."/><br>s</td>
+                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_D_T.png" title="The key [D], when in a level, will move the character closer to the left." alt="The key [D], when in a level, will move the character closer to the left."/><br>d</td>
+            </tr>
+        </table>
+        <br>
+        <p class="captionSubTitle">Keys for hidden levels: </p>
+        <p><input type="checkbox" onclick="showHide('hiddenButtons','The_hidden_Buttons','TextHiddenButtons');" id="hiddenButtons"><span id="TextHiddenButtons">Show</span> the hidden levels keys.</input></td>
+        <table id="The_hidden_Buttons">
+            <tr>
+                <td></td>
+                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_H_T.png" title="The key [H], if pressed when in the main menu, will allow you to play the level H." alt="The key [H], if pressed when in the main menu, will allow you to play the level H."/><br>H</td>
+                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_I_T.png" title="The key [I], if pressed when in the main menu, will allow you to play the level I." alt="The key [I], if pressed when in the main menu, will allow you to play the level I."/><br>I</td>
+                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_P_T.png" title="The key [P], if pressed when in the main menu, will allow you to play the level P." alt="The key [P], if pressed when in the main menu, will allow you to play the level P."/><br>P</td>
+                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_M_T.png" title="The key [M], if pressed when in the main menu, will allow you to play the level M." alt="The key [M], if pressed when in the main menu, will allow you to play the level M."/><br>M</td>
+                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_F1_T.png" title="The key [F1], if pressed when in the main menu, will allow you to play the level F1." alt="The key [F1], if pressed when in the main menu, will allow you to play the level F1."/><br>F1</td>
+                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_F2_T.png" title="The key [F2], if pressed when in the main menu, will allow you to play the level F2." alt="The key [F2], if pressed when in the main menu, will allow you to play the level F2."/><br>F2</td>
+                <td><img class="keyFromKeyboard" src="files/img/keys/computer_key_F3_T.png" title="The key [F3], if pressed when in the main menu, will allow you to play the level Credits." alt="The key [F3], if pressed when in the main menu, will allow you to play the level Credits."/><br>F3</td>
             </tr>
         </table>
         <br>
@@ -159,7 +216,18 @@
             key s: https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_S.png.html
             key d: https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_D.png.html
             key a: https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_A.png.html
-            key w: https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_W.png.html</p>
+            key w: https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_W.png.html
+            key F1: https://www.wpclipart.com/computer/keyboard_keys/function_key_row/computer_key_F1.png.html
+            key F2:https://www.wpclipart.com/computer/keyboard_keys/function_key_row/computer_key_F2.png.html
+            key F3:https://www.wpclipart.com/computer/keyboard_keys/function_key_row/computer_key_F3.png.html
+            key H: https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_H.png.html
+            key I: https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_I.png.html
+            key P: https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_P.png.html
+            key M: https://www.wpclipart.com/computer/keyboard_keys/letters/computer_key_M.png.html</p>
+            <p><img class="image_WE_Link_Container_child" src="files/img/down-arrow.svg"/> Download Button :</p><div>Icons made by <a href="https://creativemarket.com/Becris" title="Becris">Becris</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <p><img class="The_image_of_the_system" src="files/img/OS/apple.svg" alt="Apple" title="Apple"/> Mac: <a class="link" href="https://worldvectorlogo.com/fr/logo/apple">https://worldvectorlogo.com/fr/logo/apple</a></p>
+            <p><img class="The_image_of_the_system" src="files/img/OS/microsoft-windows-22.svg" alt="Windows" title="Windows"/> Windows: <a class="link" href="https://worldvectorlogo.com/fr/logo/microsoft-windows-22">https://worldvectorlogo.com/fr/logo/microsoft-windows-22</a></p>
+            <p><img class="The_image_of_the_system" src="files/img/OS/Removal-41.png" alt="Linux" title="Linux"/> Linux: <a class="link" href="https://worldvectorlogo.com/fr/linux-tux">https://worldvectorlogo.com/fr/logo/linux-tux</a></p>
         </credits>
         
     </main>

@@ -1,0 +1,3 @@
+windows: https://worldvectorlogo.com/fr/logo/microsoft-windows-22
+Mac: https://worldvectorlogo.com/fr/logo/apple
+Linux: https://worldvectorlogo.com/fr/logo/linux-tux
