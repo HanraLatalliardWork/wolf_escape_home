@@ -39,16 +39,32 @@ header {
 
 HeaderLeft{
     display: flex;
+    flex-direction: row;
     float: left;
+    width:25%;
+}
+
+.homeIcon{
+    width: 50px;
+    height: 50px;
+    background-image: url("files/img/Home/wolf_Icon_home.png");
+}
+
+.homeIcon:hover{
+    background-image: url("files/img/Home/wolf_Icon_home_Hover.png");
 }
 
 .HeaderCenter{
     display: flex;
+    flex-direction: row;
+    width: 25%;
 }
 
 HeaderRight{
     display: flex;
+    flex-direction: row;
     float: right;
+    width: 25%;
 }
 
 /* Footer */
