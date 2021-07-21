@@ -1,14 +1,36 @@
 function theme(ID = "darkOrLight", ID2 = "theme") {
     var WasChecked = document.getElementById(ID).checked,
         home = "https://hanralatalliardwork.github.io/wolf_escape_home/";
+        //var home="./";
     if (WasChecked === false) {
         document.getElementById(ID2).innerHTML = "<link rel=\"stylesheet\" href=\"" + home + "files/customisation/css/bootstrap.css\">";
+        // createCookie('theme',"L","","/");
     } else {
         document.getElementById(ID2).innerHTML = "<link rel=\"stylesheet\" href=\"" + home + "files/customisation/css/boostrap_dark.css\">";
+        // createCookie('theme',"D","","/");
     }
 }
 
-function initialiseTheme(ID) {
+function initialiseTheme(ID,IDRead) {
     var home = "https://hanralatalliardwork.github.io/wolf_escape_home/";
-    document.getElementById(ID).innerHTML = "<link rel=\"stylesheet\" href=\"" + home + "files/customisation/css/bootstrap.css\">";
+    // var home="./";
+    try {
+        e=readCookie("theme")
+        if (e==="L"){
+            document.getElementById(ID).innerHTML = "<link rel=\"stylesheet\" href=\"" + home + "files/customisation/css/bootstrap.css\">";
+            document.getElementById(IDRead).checked=false;
+        }
+        if (e==="D"){
+            document.getElementById(ID).innerHTML = "<link rel=\"stylesheet\" href=\"" + home + "files/customisation/css/bootstrap_dark.css\">";
+            document.getElementById(IDRead).checked=true;
+        }
+        if (e===""){
+            document.getElementById(ID).innerHTML = "<link rel=\"stylesheet\" href=\"" + home + "files/customisation/css/bootstrap.css\">";
+            document.getElementById(IDRead).checked=false;
+        }
+    } catch(err) {
+        document.getElementById(ID).innerHTML = "<link rel=\"stylesheet\" href=\"" + home + "files/customisation/css/bootstrap.css\">";
+        document.cookie="theme=L";
+        // createCookie("theme","L","","/");
+    }
 }

@@ -57,7 +57,9 @@
 #The_hidden_Buttons{
     display: none;
 }
-
+.image_hosts{
+    width: 40px;
+}
 .image_credits{
     height: 40px;
 }

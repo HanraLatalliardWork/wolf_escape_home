@@ -19,6 +19,6 @@ function TableOfContents(ID) {
     for (var i = 0; i < content.length; i++) {
         e += content[i] + "\n";
     }
-    console.log("e=" + e);
+    // console.log("e=" + e);
     document.getElementById(ID).innerHTML = e;
 }

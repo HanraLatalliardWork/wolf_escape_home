@@ -24,8 +24,8 @@ header {
     position: fixed;
     top: 0px;
     width: 100%;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     color: black;
     background-color: rgba(255, 255, 255, 0.5);
     border-color: rgba(0, 0, 0, 1);
@@ -69,12 +69,6 @@ HeaderRight{
 }
 
 /* Footer */
-
-/* Main */
-.GapMain{
-    margin-top: 30px;
-    
-}
 
 /* links */
 
