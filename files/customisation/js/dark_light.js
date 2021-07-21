@@ -4,10 +4,10 @@ function theme(ID = "darkOrLight", ID2 = "theme") {
         //var home="./";
     if (WasChecked === false) {
         document.getElementById(ID2).innerHTML = "<link rel=\"stylesheet\" href=\"" + home + "files/customisation/css/bootstrap.css\">";
-        // createCookie('theme',"L","","/");
+        createCookie('theme',"L","","/");
     } else {
         document.getElementById(ID2).innerHTML = "<link rel=\"stylesheet\" href=\"" + home + "files/customisation/css/boostrap_dark.css\">";
-        // createCookie('theme',"D","","/");
+        createCookie('theme',"D","","/");
     }
 }
 
@@ -19,18 +19,21 @@ function initialiseTheme(ID,IDRead) {
         if (e==="L"){
             document.getElementById(ID).innerHTML = "<link rel=\"stylesheet\" href=\"" + home + "files/customisation/css/bootstrap.css\">";
             document.getElementById(IDRead).checked=false;
+            createCookie("theme","L","","/")
         }
         if (e==="D"){
             document.getElementById(ID).innerHTML = "<link rel=\"stylesheet\" href=\"" + home + "files/customisation/css/bootstrap_dark.css\">";
             document.getElementById(IDRead).checked=true;
+            createCookie("theme","D","","/")
         }
         if (e===""){
             document.getElementById(ID).innerHTML = "<link rel=\"stylesheet\" href=\"" + home + "files/customisation/css/bootstrap.css\">";
             document.getElementById(IDRead).checked=false;
+            createCookie("theme","L","","/")
         }
     } catch(err) {
         document.getElementById(ID).innerHTML = "<link rel=\"stylesheet\" href=\"" + home + "files/customisation/css/bootstrap.css\">";
-        document.cookie="theme=L";
-        // createCookie("theme","L","","/");
+        // document.cookie="theme=L";
+        createCookie("theme","L","","/");
     }
 }
