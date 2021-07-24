@@ -63,3 +63,19 @@
 .image_credits{
     height: 40px;
 }
+
+label {
+    display: block;
+    position: absolute;
+    top: 6%;
+    right: 1%;
+    width: 94px;
+    height: 32px;
+    margin: 19px auto;
+    background-color: #77b5fe;
+    border-radius: 56px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: 0.3s ease background-color;
+    overflow: hidden;
+}
