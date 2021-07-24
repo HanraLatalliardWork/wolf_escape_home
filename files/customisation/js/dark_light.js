@@ -22,7 +22,7 @@ function initialiseTheme(ID,IDRead) {
             createCookie("theme","L","","/")
         }
         if (e==="D"){
-            document.getElementById(ID).innerHTML = "<link rel=\"stylesheet\" href=\"" + home + "files/customisation/css/bootstrap_dark.css\">";
+            document.getElementById(ID).innerHTML = "<link rel=\"stylesheet\" href=\"" + home + "files/customisation/css/boostrap_dark.css\">";
             document.getElementById(IDRead).checked=true;
             createCookie("theme","D","","/")
         }

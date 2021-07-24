@@ -23,6 +23,7 @@ tbody, tfoot, thead, tr, th, td{
 header {
     position: fixed;
     top: 0px;
+    left:0px;
     width: 100%;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -52,6 +53,8 @@ HeaderLeft{
 .homeIcon:hover{
     background-color:rgba(255, 217, 0, 0.39);
     transform: rotateY(180);
+    -moz-transform: rotateY(180);
+    -o-transform: rotateY(180);
 }
 
 .HeaderCenter{
