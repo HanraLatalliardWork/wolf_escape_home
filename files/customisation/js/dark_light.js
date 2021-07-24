@@ -35,5 +35,6 @@ function initialiseTheme(ID,IDRead) {
         document.getElementById(ID).innerHTML = "<link rel=\"stylesheet\" href=\"" + home + "files/customisation/css/bootstrap.css\">";
         // document.cookie="theme=L";
         createCookie("theme","L","","/");
+        alert("err="+err)
     }
 }
