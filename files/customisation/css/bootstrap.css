@@ -39,6 +39,8 @@ header {
 
 HeaderContainer{
     width: 90%;
+    display: flex;
+    flex-wrap: nowrap;
     margin-left:0px;
     margin-top:0px;
     margin-bottom: 0px;
@@ -77,7 +79,7 @@ HeaderLeft{
 
 .HeaderCenter{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 25%;
     background-color: rgba(255, 255, 0, 0.452);
     flex-wrap:wrap;
