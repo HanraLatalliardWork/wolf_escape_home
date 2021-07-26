@@ -49,8 +49,8 @@ HeaderContainer{
     padding-top: 0px;
     padding-bottom: 0px;
     padding-right: 0px;
-    border: 3px blueviolet groove;
-    background-color: aqua;
+    /* border: 3px blueviolet groove; */
+    /* background-color: aqua; */
     justify-content: space-between;
 }
 
@@ -61,7 +61,7 @@ HeaderLeft{
     flex-direction: row;
     float: left;
     /* width:25%; */
-    background-color: rgba(100, 148, 237, 0.452);
+    /* background-color: rgba(100, 148, 237, 0.452); */
     flex-wrap:wrap;
 }
 
@@ -82,7 +82,7 @@ HeaderLeft{
     display: flex;
     flex-direction: column;
     /* width: 25%; */
-    background-color: rgba(255, 255, 0, 0.452);
+    /* background-color: rgba(255, 255, 0, 0.452); */
     flex-wrap:wrap;
     padding-left: 10px;
     padding-right: 10px;
@@ -93,14 +93,14 @@ HeaderRight{
     flex-direction: row;
     float: right;
     width: 25%;
-    background-color: rgba(0, 100, 0,0.452);
+    /* background-color: rgba(0, 100, 0,0.452); */
     flex-wrap:wrap;
     justify-content: space-between;
 }
 
 #checkboxContainer{
     /* display: none; */
-    display: blo90
+    display: block;
     background-color: rgba(255, 99, 71, 0.623);
 }
 
