@@ -37,7 +37,7 @@ header {
 }
 
 HeaderContainer{
-    width: 100%;
+    width: 90%;
     margin-left:0px;
     margin-top:0px;
     margin-bottom: 0px;
@@ -55,6 +55,7 @@ HeaderLeft{
     flex-direction: row;
     float: left;
     width:25%;
+    flex-wrap:wrap;
 }
 
 .homeIcon{
@@ -73,6 +74,7 @@ HeaderLeft{
     display: flex;
     flex-direction: row;
     width: 25%;
+    flex-wrap:wrap;
 }
 
 HeaderRight{
@@ -80,6 +82,7 @@ HeaderRight{
     flex-direction: row;
     float: right;
     width: 25%;
+    flex-wrap:wrap;
 }
 
 /* Footer */

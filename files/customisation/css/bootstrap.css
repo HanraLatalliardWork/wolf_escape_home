@@ -38,7 +38,7 @@ header {
 }
 
 HeaderContainer{
-    width: 100%;
+    width: 90%;
     margin-left:0px;
     margin-top:0px;
     margin-bottom: 0px;
@@ -59,6 +59,7 @@ HeaderLeft{
     float: left;
     width:25%;
     background-color: rgba(100, 148, 237, 0.452);
+    flex-wrap:wrap;
 }
 
 .homeIcon{
@@ -79,6 +80,7 @@ HeaderLeft{
     flex-direction: row;
     width: 25%;
     background-color: rgba(255, 255, 0, 0.452);
+    flex-wrap:wrap;
 }
 
 HeaderRight{
@@ -87,11 +89,12 @@ HeaderRight{
     float: right;
     width: 25%;
     background-color: rgba(0, 100, 0,0.452);
+    flex-wrap:wrap;
 }
 
 #checkboxContainer{
     /* display: none; */
-    display: block;
+    display: blo90
     background-color: rgba(255, 99, 71, 0.623);
 }
 
