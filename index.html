@@ -30,26 +30,35 @@
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v11.0" nonce="XJZzd85a"></script>
     <header>
-        <HeaderLeft>
-            <a class="link" href="https://hanralatalliardwork.github.io/wolf_escape_home/"><img class="homeIcon" src="files/img/Home/wolf_Icon_home.png"/></a>
-        </HeaderLeft>
-        <center class="HeaderCenter">
-            <h1>Wolf Escape</h1>
-        </center>
-        <HeaderRight>
-            <div class="fb-like" data-href="https://www.facebook.com/HenrySoftwareHouse" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
-            <div>
-                <input type="checkbox" id="darkOrLight" onclick="theme('darkOrLight','theme','https://hanralatalliardwork.github.io/wolf_escape_home/','files/customisation/css/boostrap_dark.css','files/customisation/css/bootstrap.css');checkTheme('theme','DownloadLogo','DownloadButtonCredits','DiscordLogo');">
-                <label for="darkOrLight">
-                    <div id="star">
-                        <div class="star" id="star-1">&starf;</div>
-                        <div class="star" id="star-2">&starf;</div>
-                    </div>
-                    <div id="moon"></div>
-                </label>
-            </div>
-        </HeaderRight>
-
+        <HeaderContainer>
+            <HeaderLeft>
+                <a class="link" href="https://hanralatalliardwork.github.io/wolf_escape_home/"><img class="homeIcon" src="files/img/Home/wolf_Icon_home.png"/></a>
+            </HeaderLeft>
+            <center class="HeaderCenter">
+                <h1>Wolf Escape</h1>
+            </center>
+            <HeaderRight>
+                <div class="fb-like" data-href="https://www.facebook.com/HenrySoftwareHouse" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
+                <!-- Place this tag where you want the button to render. -->
+                <a class="github-button" href="https://github.com/hanralatalliardwork" data-color-scheme="no-preference: light; light: light; dark: dark;" data-show-count="true" aria-label="Follow @hanralatalliardwork on GitHub">Follow @hanralatalliardwork</a>
+                <!-- Place this tag where you want the button to render. -->
+                <a class="github-button" href="https://github.com/hanralatalliardwork/wolf_escape_home/subscription" data-icon="octicon-eye" data-show-count="true" aria-label="Watch hanralatalliardwork/wolf_escape_home on GitHub">Watch</a>
+                <!-- Place this tag where you want the button to render. -->
+                <a class="github-button" href="https://github.com/hanralatalliardwork/wolf_escape_home" data-icon="octicon-star" data-show-count="true" aria-label="Star hanralatalliardwork/wolf_escape_home on GitHub">Star</a>
+                <!-- Place this tag where you want the button to render. -->
+                <a class="github-button" href="https://github.com/hanralatalliardwork/My_styling/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork hanralatalliardwork/My_styling on GitHub">Fork</a>
+            </HeaderRight>
+        </HeaderContainer>
+        <div>
+            <input type="checkbox" id="darkOrLight" onclick="theme('darkOrLight','theme','https://hanralatalliardwork.github.io/wolf_escape_home/','files/customisation/css/boostrap_dark.css','files/customisation/css/bootstrap.css');checkTheme('theme','DownloadLogo','DownloadButtonCredits','DiscordLogo');">
+            <label for="darkOrLight">
+                <div id="star">
+                    <div class="star" id="star-1">&starf;</div>
+                    <div class="star" id="star-2">&starf;</div>
+                </div>
+                <div id="moon"></div>
+            </label>
+        </div>     
     </header>
     <main class="GapMain">
         <br>
@@ -294,6 +303,8 @@
     <bootJS>
         <script type="text/JavaScript">initialiseTheme("theme","darkOrLight",'https://hanralatalliardwork.github.io/wolf_escape_home/','files/customisation/css/boostrap_dark.css','files/customisation/css/bootstrap.css');</script>
         <script type='text/JavaScript'>checkTheme("theme","DownloadLogo","DownloadButtonCredits","DiscordLogo")</script>
+        <!-- Place this tag in your head or just before your close body tag. -->
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
     </bootJS>
 </body>
 
