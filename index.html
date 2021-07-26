@@ -27,15 +27,6 @@
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v11.0" nonce="XJZzd85a"></script>
     <header>
-        <!-- <div class="Dark_Or_Light_toggle"> -->
-        <input type="checkbox" id="darkOrLight" onclick="theme('darkOrLight','theme','https://hanralatalliardwork.github.io/wolf_escape_home/','files/customisation/css/boostrap_dark.css','files/customisation/css/bootstrap.css');">
-        <label for="darkOrLight">
-            <div id="star">
-                <div class="star" id="star-1">&starf;</div>
-                <div class="star" id="star-2">&starf;</div>
-            </div>
-            <div id="moon"></div>
-        </label>
         <HeaderLeft>
             <a class="link" href="https://hanralatalliardwork.github.io/wolf_escape_home/"><img class="homeIcon" src="files/img/Home/wolf_Icon_home.png"/></a>
         </HeaderLeft>
@@ -44,6 +35,16 @@
         </center>
         <HeaderRight>
             <div class="fb-like" data-href="https://www.facebook.com/HenrySoftwareHouse" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
+            <div>
+                <input type="checkbox" id="darkOrLight" onclick="theme('darkOrLight','theme','https://hanralatalliardwork.github.io/wolf_escape_home/','files/customisation/css/boostrap_dark.css','files/customisation/css/bootstrap.css');">
+                <label for="darkOrLight">
+                    <div id="star">
+                        <div class="star" id="star-1">&starf;</div>
+                        <div class="star" id="star-2">&starf;</div>
+                    </div>
+                    <div id="moon"></div>
+                </label>
+            </div>
         </HeaderRight>
 
     </header>
@@ -87,13 +88,13 @@
         <br>
         <p id="Download"/>
         <h2>Download Wolf Escape</h2>
-            <a class="link" href="https://hanra-latalliar.gumroad.com/l/kenGL" target="__blank"><img class="image_WE_Link_Container_child" src="files/img/down-arrow.svg" alt="Discord logo" title="Discord logo"/>Download Wolf escape!</a>
+            <a class="link" href="https://hanra-latalliar.gumroad.com/l/kenGL" target="__blank"><span id="DownloadLogo"></span>Download Wolf escape!</a>
         </div>
         <br>
         <p id="Discord"/>
         <h2>The Wolf Escape Discord server</h2>
         <div class="Discord_Link_container">
-            <a class="link" href="https://discord.gg/VM2cJ69"><img class="image_Discord_Link_Container_child" src="files/requirements/img/Follow-me/discord/discord_B.PNG" alt="Discord logo" title="Discord logo"/>Wolf Escape</a>
+            <a class="link" href="https://discord.gg/VM2cJ69"><span id="DiscordLogo"></span>Wolf Escape</a>
         </div>
         <br>
         <p id="Controls"/>
@@ -278,7 +279,7 @@
             <p><img class="image_credits" src="files/img/keys/computer_key_F1_T.png"/> Key F1: <a class="link" href="https://www.wpclipart.com/computer/keyboard_keys/function_key_row/computer_key_F1.png.html">https://www.wpclipart.com/computer/keyboard_keys/function_key_row/computer_key_F1.png.html</a></p>
             <p><img class="image_credits" src="files/img/keys/computer_key_F2_T.png"/> Key F2: <a class="link" href="https://www.wpclipart.com/computer/keyboard_keys/function_key_row/computer_key_F2.png.html">https://www.wpclipart.com/computer/keyboard_keys/function_key_row/computer_key_F2.png.html</a></p>
             <p><img class="image_credits" src="files/img/keys/computer_key_F3_T.png"/> Key F3: <a class="link" href="https://www.wpclipart.com/computer/keyboard_keys/function_key_row/computer_key_F3.png.html">https://www.wpclipart.com/computer/keyboard_keys/function_key_row/computer_key_F3.png.html</a></p>
-            <p><img class="image_credits" src="files/img/down-arrow.svg"/> Download Button : Icons made by <a href="https://creativemarket.com/Becris" title="Becris">Becris</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+            <p><span id="DownloadButtonCredits"></span> Download Button : Icons made by <a href="https://creativemarket.com/Becris" title="Becris">Becris</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>. Page of the image: <a href="https://www.flaticon.com/free-icon/down-arrow_860801" title="The download arrow">https://www.flaticon.com/free-icon/down-arrow_860801</a></p>
             <p><img class="image_credits" src="files/img/OS/apple.svg" alt="Apple" title="Apple"/> Mac: <a class="link" href="https://worldvectorlogo.com/fr/logo/apple">https://worldvectorlogo.com/fr/logo/apple</a></p>
             <p><img class="image_credits" src="files/img/OS/microsoft-windows-22.svg" alt="Windows" title="Windows"/> Windows: <a class="link" href="https://worldvectorlogo.com/fr/logo/microsoft-windows-22">https://worldvectorlogo.com/fr/logo/microsoft-windows-22</a></p>
             <p><img class="image_credits" src="files/img/OS/Removal-41.png" alt="Linux" title="Linux"/> Linux: <a class="link" href="https://worldvectorlogo.com/fr/linux-tux">https://worldvectorlogo.com/fr/logo/linux-tux</a></p>
@@ -289,7 +290,7 @@
     <footer></footer>
     <bootJS>
         <script type="text/JavaScript">initialiseTheme("theme","darkOrLight",'https://hanralatalliardwork.github.io/wolf_escape_home/','files/customisation/css/boostrap_dark.css','files/customisation/css/bootstrap.css');</script>
-
+        <script type='text/JavaScript'>checkTheme("theme","DownloadLogo","DownloadButtonCredits","DiscordLogo")</script>
     </bootJS>
 </body>
 
