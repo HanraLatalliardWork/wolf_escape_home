@@ -36,7 +36,7 @@
         <HeaderRight>
             <div class="fb-like" data-href="https://www.facebook.com/HenrySoftwareHouse" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
             <div>
-                <input type="checkbox" id="darkOrLight" onclick="theme('darkOrLight','theme','https://hanralatalliardwork.github.io/wolf_escape_home/','files/customisation/css/boostrap_dark.css','files/customisation/css/bootstrap.css');">
+                <input type="checkbox" id="darkOrLight" onclick="theme('darkOrLight','theme','https://hanralatalliardwork.github.io/wolf_escape_home/','files/customisation/css/boostrap_dark.css','files/customisation/css/bootstrap.css');try{console.log('running checkTheme');checkTheme('theme','DownloadLogo','DownloadButtonCredits','DiscordLogo');console.log('checkTheme has been run successfully');} catch(err) {console.log('failed to run checkTheme');console.log('Theme Check= '+err);}">
                 <label for="darkOrLight">
                     <div id="star">
                         <div class="star" id="star-1">&starf;</div>
