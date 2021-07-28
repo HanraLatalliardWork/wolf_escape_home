@@ -20,7 +20,7 @@ function writeBodyHeader(ID){
     writeBodyHeader+='    </HeaderRight>\n';
     writeBodyHeader+='</HeaderContainer>\n';
     writeBodyHeader+='<div id="checkboxContainer">\n';
-    writeBodyHeader+='    <input type="checkbox" id="darkOrLight" onclick="theme(\'darkOrLight\',\'theme\',\'https://hanralatalliardwork.github.io/wolf_escape_home/\',\'files/customisation/css/boostrap_dark.css\',\'files/customisation/css/bootstrap.css\');checkTheme(\'theme\',\'DownloadLogo\',\'DownloadButtonCredits\',\'DiscordLogo\');">\n';
+    writeBodyHeader+='    <input type="checkbox" id="darkOrLight" onclick="theme(\'darkOrLight\',\'theme\',\'https://hanralatalliardwork.github.io/wolf_escape_home/\',\'files/customisation/css/boostrap_dark.css\',\'files/customisation/css/bootstrap.css\');UpdateTheme();">\n';
     writeBodyHeader+='    <label for="darkOrLight">\n';
     writeBodyHeader+='        <div id="star">\n';
     writeBodyHeader+='            <div class="star" id="star-1">&starf;</div>\n';
