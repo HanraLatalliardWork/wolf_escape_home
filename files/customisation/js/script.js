@@ -1,13 +1,13 @@
-function showHide(IDFrom,IDTo,IDText){
-    e=document.getElementById(IDFrom).checked;
-    if (e===true){
-        document.getElementById(IDTo).style.display="block";
-        document.getElementById(IDText).innerHTML="Hide";
-    } else {
-        document.getElementById(IDTo).style.display="none";
-        document.getElementById(IDText).innerHTML="Show";
-    }
-}
+// function showHide(IDFrom,IDTo,IDText){
+//     e=document.getElementById(IDFrom).checked;
+//     if (e===true){
+//         document.getElementById(IDTo).style.display="block";
+//         document.getElementById(IDText).innerHTML="Hide";
+//     } else {
+//         document.getElementById(IDTo).style.display="none";
+//         document.getElementById(IDText).innerHTML="Show";
+//     }
+// }
 // function checkTheme(CookieName,listOfIDsToEdit,DictOfCodesToApply){
 //     currentTheme=readCookie(CookieName).toLowerCase();
 //     console.log("currentTheme="+currentTheme);
