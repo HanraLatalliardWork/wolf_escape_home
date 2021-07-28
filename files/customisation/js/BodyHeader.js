@@ -2,7 +2,7 @@ function writeBodyHeader(ID){
     var writeBodyHeader="";
     writeBodyHeader+='    <HeaderContainer>\n';
     writeBodyHeader+='    <HeaderLeft>\n';
-    writeBodyHeader+='        <a class="link" href="https://hanralatalliardwork.github.io/wolf_escape_home/"><img class="homeIcon" src="files/img/Home/wolf_Icon_home.png"/></a>\n';
+    writeBodyHeader+='        <a class="link" href="https://hanralatalliardwork.github.io/wolf_escape_home/"><img class="homeIcon" src="https://hanralatalliardwork.github.io/wolf_escape_home/files/img/Home/wolf_Icon_home.png"/></a>\n';
     writeBodyHeader+='    </HeaderLeft>\n';
     writeBodyHeader+='    <center class="HeaderCenter">\n';
     writeBodyHeader+='        <h1>Wolf Escape</h1>\n';
