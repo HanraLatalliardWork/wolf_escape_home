@@ -9,7 +9,7 @@ function initialiseHeader(IDTo,top=2){
     favicon_ie = "files/requirements/img/ingame/wolf_icon_16x16.ico", //size 16x16 (for IE), format:.ico
     favicon_all = "files/requirements/img/ingame/wolf_icon.png"; //size 32x32 (for all), format:.png
     favicon_svg="files/requirements/img/ingame/wolf_icon.svg"
-    if (tip==1){var home = "./";}else{var home = "http://www.hanra-latalliar.unaux.com/wolf_escape_home/";};
+    if (tip==1){var home = "./";}else{var home = "https://hanralatalliardwork.github.io/wolf_escape_home/";};
     if (top == 1) { tip = "the main" } else { tip = "a sub" };
     if (top != 1) { headList.push("        <meta name=\"google-site-verification\" content=\"" + verification + "\" />"); }
     headList.push("        <meta charset=\"UTF-8\"/>");
