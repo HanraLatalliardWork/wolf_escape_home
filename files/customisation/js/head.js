@@ -1,6 +1,6 @@
 function initialiseHeader(IDTo,top=2){
     var headList=[],
-    tip=1,
+    tip=2,
     temp="",
     author = "Henry Letellier",
     verification = "",
