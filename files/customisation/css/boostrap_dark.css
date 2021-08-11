@@ -91,6 +91,11 @@ HeaderRight{
     justify-content: space-between;
 }
 
+/* Main */
+main{
+    padding-top: 76px;
+}
+
 /* Footer */
 
 
