@@ -79,3 +79,8 @@ label {
     transition: 0.3s ease background-color;
     overflow: hidden;
 }
+
+.auth_line_wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
