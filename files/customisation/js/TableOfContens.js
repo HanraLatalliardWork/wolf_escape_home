@@ -36,7 +36,7 @@ content.push("          <ol class=\"ContentsListol\"><a class=\"link\" onclick=\
 content.push("          <ol class=\"ContentsListol\"><a class=\"link\" onclick=\"showContent(\'hearts-content\',\'heartsButtonToggle\')\"  href=\"" + home + ad + "#hearts\">Hearts</a></ol>")
 content.push("          <ol class=\"ContentsListol\"><a class=\"link\" onclick=\"showContent(\'common symbols-content\',\'common symbolsButtonToggle\')\"  href=\"" + home + ad + "#common symbols\">Common symbols</a></ol>")
 content.push("          <ol class=\"ContentsListol\"><a class=\"link\" onclick=\"showContent(\'maths-content\',\'mathsButtonToggle\')\"  href=\"" + home + ad + "#maths\">Maths</a></ol>")
-content.push("          <ol class=\"ContentsListol\"><a class=\"link\" onclick=\"showContent(\'micelanicious_(not_places)-content\',\'micelanicious_(not_places)ButtonToggle\')\"  href=\"" + home + ad + "#micelanicious (not placed)\">Micelanicious (not placed)</a></ol>")
+content.push("          <ol class=\"ContentsListol\"><a class=\"link\" href=\"" + home + ad + "#micelanicious_(not_places)\">Micelanicious (not placed)</a><span onclick=\"showContent(\'micelanicious_(not_places)-content\',\'micelanicious_(not_places)ButtonToggle\')\"></span></ol>")
     }
     content.push("          <li class=\"ContentsListli\"><a class=\"link\"  href=\"" + home + "files/level_creators/available_decorations/\">All the sprites of the game</a></li>");
     if (page===""){}
