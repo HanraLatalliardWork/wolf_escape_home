@@ -17,6 +17,8 @@ function TableOfContents(ID,page="") {
         content.push("          <ol class=\"ContentsListol\"><a class=\"link\"  href=\"" + home + "#ToCome\">To come</a></ol>");
     }
     content.push("          <li class=\"ContentsListli\"><a class=\"link\"  href=\"" + home + "\">Create Levels</a></li>");
+    if (page===""){}
+    content.push("          <li class=\"ContentsListli\"><a class=\"link\"  href=\"" + home + "files/level_creators/available_decorations/\">All the sprites of the game</a></li>");
     if (page==="available_decorations"){
         content.push("          <ol class=\"ContentsListol\"><a class=\"link\" onclick=\"showContent(\'ends-content\',\'endsButtonToggle\')\"  href=\"#ends\">Ends</a></ol>")
         content.push("          <ol class=\"ContentsListol\"><a class=\"link\" onclick=\"showContent(\'social-content\',\'socialButtonToggle\')\"  href=\"#social\">Social</a></ol>")
@@ -38,8 +40,6 @@ function TableOfContents(ID,page="") {
         content.push("          <ol class=\"ContentsListol\"><a class=\"link\" onclick=\"showContent(\'maths-content\',\'mathsButtonToggle\')\"  href=\"#maths\">Maths</a></ol>")
         content.push("          <ol class=\"ContentsListol\"><a class=\"link\" href=\"#micelanicious_(not_places)\">Micelanicious (not placed)</a><span onclick=\"showContent(\'micelanicious_(not_places)-content\',\'micelanicious_(not_places)ButtonToggle\')\"></span></ol>")
     }
-    content.push("          <li class=\"ContentsListli\"><a class=\"link\"  href=\"" + home + "files/level_creators/available_decorations/\">All the sprites of the game</a></li>");
-    if (page===""){}
     content.push("      </ul>");
     content.push("  <nav>");
     for (var i = 0; i < content.length; i++) {
