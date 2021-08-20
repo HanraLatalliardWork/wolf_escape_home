@@ -9,8 +9,8 @@ address, big, cite, code,del, dfn,
 em, font, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, 
 var,b, u, i, center, dl, dt, dd, ol, ul, 
-li,fieldset, form, label, legend, table, caption, 
-tbody, tfoot, thead, tr, th, td{
+li,fieldset, form, legend, table, caption, 
+tbody, tfoot, thead, tr, th, td,.label{/*, label*/
     color: black;
     width:max-content;
 }
