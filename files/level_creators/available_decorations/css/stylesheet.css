@@ -25,6 +25,7 @@
     width: 99%;
     background-color: white;
     border: 0.5px black groove;
+    color: black;
 }
 
 .index:clicked {
