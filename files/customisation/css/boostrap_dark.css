@@ -1,6 +1,8 @@
 body {
     background-color: black;
     word-wrap: break-word;
+    font-familly: Arial;
+    font-size: 10px;
 }
 
 p,h1,h2,h3,h4,h5,h6,h7,h8,span,
