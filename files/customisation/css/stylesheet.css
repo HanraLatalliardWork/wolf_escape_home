@@ -1,5 +1,5 @@
 .keyFromKeyboard{
-    width: 50px;
+    width: auto;
     height: 50px;
 }
 .captionSubTitle, .captionTitle{
@@ -62,6 +62,7 @@
 }
 .image_credits{
     height: 40px;
+    width: auto;
 }
 
 label {
